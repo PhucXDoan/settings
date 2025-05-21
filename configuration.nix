@@ -8,6 +8,7 @@
 				with pkgs;
 				[
 					git
+					git-credential-manager
 					gcc14
 					python314
 					cloc

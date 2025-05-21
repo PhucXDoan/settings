@@ -9,9 +9,15 @@
 				};
 
 			# Git.
-			programs.git.enable    = true;
-			programs.git.userName  = "PhucXDoan";
-			programs.git.userEmail = "phucxdoan@gmail.com";
+			programs.git.enable                 = true;
+			programs.git.userName               = "PhucXDoan";
+			programs.git.userEmail              = "phucxdoan@gmail.com";
+			programs.git.extraConfig.credential =
+				{
+					helper                        = "manager";
+					"https://github.com".username = "PhucXDoan";
+					credentialStore               = "secretservice";
+				};
 
 			# Miscellancious.
 			home.username                = "phucxdoan";
