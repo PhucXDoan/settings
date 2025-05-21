@@ -11,6 +11,7 @@
 					gcc14
 					python314
 					cloc
+					gcc-arm-embedded-13
 					vimHugeX  # Vim with stuff for X11 (e.g. clipboard).
 					usbutils  # For `lsusb`.
 				];
@@ -60,7 +61,5 @@
 			services.pipewire.pulse.enable               = true;
 			nixpkgs.config.allowUnfree                   = true;
 			system.stateVersion                          = "24.11"; # Initial NixOS version. @/(search.nixos.org/options?show=system.stateVersion).
-
-			# environment.etc."vimrc".source = ./myvimrc;
 		};
 }
